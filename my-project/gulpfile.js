@@ -1,30 +1,45 @@
-var gulp = require("gulp");
-var sass = require("gulp-sass");
+const gulp = require('gulp')
+const pug = require('gulp-pug')
+const sass = require("gulp-sass");
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 
-// Define tasks after requiring dependencies
-
-function style() {
-    // Where should gulp look for the sass files?
-    // My .sass files are stored in the styles folder
-    // (If you want to use scss files, simply look for *.scss files instead)
+function pug2html(cb) {
     return (
         gulp
-            .src("sass/*.sass")
-            // Use sass with the files found, and log any errors
+            .src('src/*.pug')
+            .pipe(pug())
+            .pipe(gulp.dest('./dest'))
+    );
+
+}
+
+function style() {
+    return (
+        gulp
+            .src("src/sass/*.sass")
             .pipe(sass())
             .on("error", sass.logError)
-            // What is the destination for the compiled file?
             .pipe(gulp.dest("./dest"))
     );
 }
-function watch() {
-    // gulp.watch takes in the location of the files to watch for changes
-    // and the name of the function we want to run on change
-    gulp.watch('sass/*.sass', style)
+
+function js() {
+    return (
+        gulp
+            .src('src/js/*.js')
+            .pipe(concat('main.js'))
+            .pipe(uglify())
+            .pipe(gulp.dest('./dest'))
+    );
 }
 
-// Expose the task by exporting it
-// This allows you to run it from the commandline using
-// $ gulp style
-exports.style = style;
-exports.watch = watch
+function watch() {
+    gulp.watch('src/*.pug', pug2html)
+    gulp.watch('src/sass/*.sass', style)
+    gulp.watch('src/js/*.js', js)
+}
+
+module.exports.start = gulp.series(pug2html, style, js, watch)
+
+
