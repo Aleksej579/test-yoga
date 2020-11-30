@@ -1,2 +1,199 @@
+@font-face {
+  font-family: 'Champagne_Limousines';
+  src: url("./fonts/Champagne_Limousines Bold.woff2") format("woff2"); }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("./fonts/MyriadPro-Regular.woff"); }
+
+@font-face {
+  font-family: 'Open Sans Italic';
+  src: url("./fonts/OpenSans-Italic.woff"); }
+
+@font-face {
+  font-family: 'Open Sans SemiBold';
+  src: url("./fonts/OpenSans-SemiBold.woff"); }
+
+@font-face {
+  font-family: 'Freestyle Script';
+  src: url("./fonts/FreestyleScript.ttf"); }
+
+header {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0; }
+  header ul {
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    header ul li {
+      list-style-type: none;
+      display: inline;
+      margin: 0 15px; }
+      header ul li a {
+        font-family: 'Open Sans SemiBold';
+        font-size: 14px;
+        color: #555555;
+        text-decoration: none; }
+        header ul li a:hover {
+          color: #5363db;
+          text-decoration: underline;
+          transition: 0.3s; }
+    header ul li.YOGA {
+      margin: 0 70px; }
+      header ul li.YOGA a {
+        font-family: 'Champagne_Limousines';
+        color: #5363db;
+        font-size: 24px; }
+        header ul li.YOGA a:before {
+          content: "";
+          display: block;
+          height: 40px;
+          width: 65px;
+          background-image: url(./images/lotus.png);
+          background-size: cover; }
+        header ul li.YOGA a:hover {
+          text-decoration: none; }
+
+section {
+  width: 100%;
+  height: 100%; }
+  section .wrapper_bg {
+    height: 100%;
+    width: 100%;
+    position: relative; }
+    section .wrapper_bg .fon_bg {
+      background-color: rgba(98, 113, 226, 0.8);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1; }
+      section .wrapper_bg .fon_bg .wrapper_contactform_text {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        section .wrapper_bg .fon_bg .wrapper_contactform_text .contact_form {
+          height: 60%;
+          width: 300px;
+          background-color: white;
+          border-radius: 25px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: end;
+          padding: 40px; }
+          section .wrapper_bg .fon_bg .wrapper_contactform_text .contact_form .contact_form_labl {
+            color: #5363db;
+            font-size: 25.64px;
+            font-family: 'Open Sans SemiBold';
+            width: 100%;
+            align-items: left; }
+          section .wrapper_bg .fon_bg .wrapper_contactform_text .contact_form input, section .wrapper_bg .fon_bg .wrapper_contactform_text .contact_form select {
+            height: 50px;
+            width: 100%;
+            outline: none;
+            background: none;
+            background-color: #f2f2f2;
+            border: none;
+            border-radius: 10px;
+            margin: 7.5px 0;
+            color: #888888; }
+          section .wrapper_bg .fon_bg .wrapper_contactform_text .contact_form input:invalid:not(:placeholder-shown) {
+            border-color: red; }
+          section .wrapper_bg .fon_bg .wrapper_contactform_text .contact_form input:valid:not(:placeholder-shown) {
+            border-color: green; }
+          section .wrapper_bg .fon_bg .wrapper_contactform_text .contact_form ::placeholder {
+            font-size: 14px;
+            font-family: 'Myriad Pro'; }
+          section .wrapper_bg .fon_bg .wrapper_contactform_text .contact_form .btn_try-it {
+            font-size: 16px;
+            font-family: 'Open Sans SemiBold';
+            outline: none;
+            background: none;
+            background-color: #5b6ceb;
+            border: none;
+            height: 50px;
+            width: 170px;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+        section .wrapper_bg .fon_bg .wrapper_contactform_text .wrapper_text {
+          height: 400px;
+          width: 485px;
+          color: white;
+          margin-left: 90px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around; }
+          section .wrapper_bg .fon_bg .wrapper_contactform_text .wrapper_text .wrapper_text_first {
+            font-family: 'Open Sans SemiBold';
+            font-size: 48px; }
+          section .wrapper_bg .fon_bg .wrapper_contactform_text .wrapper_text .wrapper_text_second {
+            font-family: 'Freestyle Script';
+            font-size: 40px; }
+    section .wrapper_bg img {
+      width: 100%;
+      height: auto;
+      filter: grayscale(83%) hue-rotate(1deg); }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  right: 0;
+  background-color: #5363d8; }
+  footer p {
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-family: 'Open Sans SemiBold';
+    opacity: 0.5; }
+
+@font-face {
+  font-family: 'Champagne_Limousines';
+  src: url("./fonts/Champagne_Limousines Bold.woff2") format("woff2"); }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("./fonts/MyriadPro-Regular.woff"); }
+
+@font-face {
+  font-family: 'Open Sans Italic';
+  src: url("./fonts/OpenSans-Italic.woff"); }
+
+@font-face {
+  font-family: 'Open Sans SemiBold';
+  src: url("./fonts/OpenSans-SemiBold.woff"); }
+
+@font-face {
+  font-family: 'Freestyle Script';
+  src: url("./fonts/FreestyleScript.ttf"); }
+
+@media (max-width: 1280px) {
+  .contact_form {
+    padding: 20px !important; } }
+
+* {
+  padding: 0;
+  margin: 0; }
+
 body {
-  background-color: red; }
+  padding-top: 100px; }

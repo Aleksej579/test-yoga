@@ -1,0 +1,53 @@
+@import "_fonts"
+
+header
+    height: 100px
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    background-color: white
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    ul 
+        margin-left: 0
+        padding-left: 0
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        li 
+            list-style-type: none
+            display: inline
+            margin: 0 15px
+            a
+                font-family: 'Open Sans SemiBold'
+                font-size: 14px
+                color: #555555
+                text-decoration: none
+                &:hover
+                    color: #5363db
+                    text-decoration: underline
+                    transition: 0.3s
+        li.YOGA
+            margin: 0 70px
+            a 
+                font-family: 'Champagne_Limousines'
+                color: #5363db
+                font-size: 24px
+                &:before
+                  content: ""
+                  display: block
+                  height: 40px
+                  width: 65px
+                  background-image: url(./images/lotus.png)
+                  background-size: cover
+                &:hover
+                    text-decoration: none
+
+
+
+
+

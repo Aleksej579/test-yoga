@@ -1,0 +1,39 @@
+section
+    div(class='wrapper_bg')
+        span(class='fon_bg')
+            div(class='wrapper_contactform_text')
+                form(method="get" class='contact_form')
+                    p.contact_form_labl Trial Class
+                    input(
+                        class='input_name'
+                        type='text'
+                        name='name'
+                        placeholder='Enter your name'
+                        required
+                    )
+                    input(
+                        class='input_phone'
+                        type='text'
+                        name='phone'
+                        placeholder='Enter your phone'
+                        pattern='[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}'
+                    )
+                    - var classList = ['Chose your class', 'class-1', 'class-2', 'class-3', 'class-4'];
+                    select(
+                        name='nationality'
+                        placeholder='Chose your class'
+                    )
+                        each value in classList
+                            option.select--list(value= value)= value
+
+                    button(class='btn_try-it') Try it
+
+                div(class='wrapper_text')
+                    p(class='wrapper_text_first') Just Balance your Mind & Body
+                    p(class='wrapper_text_second') 
+                        | Create the healthy living
+                        br
+                        | for yourself
+        img(src="./images/blue_bg_1.png", alt="yoga")
+
+        

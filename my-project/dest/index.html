@@ -1,1 +1,47 @@
-<!DOCTYPE html><html><head><title>My Site</title><script src="/main.js"></script></head><body><p>test body</p><footer id="footer"><p>testFooter</p></footer></body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Site</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li class="About us"><a href="anchor-0">About us</a></li>
+        <li class="Reservation"><a href="anchor-1">Reservation</a></li>
+        <li class="Gallery"><a href="anchor-2">Gallery</a></li>
+        <li class="YOGA"><a href="anchor-3">YOGA</a></li>
+        <li class="Blog"><a href="anchor-4">Blog</a></li>
+        <li class="Elements"><a href="anchor-5">Elements</a></li>
+        <li class="Shop"><a href="anchor-6">Shop</a></li>
+      </ul>
+    </header>
+    <section>
+      <div class="wrapper_bg"><span class="fon_bg">
+          <div class="wrapper_contactform_text">
+            <form class="contact_form" method="get">
+              <p class="contact_form_labl">Trial Class</p>
+              <input class="input_name" type="text" name="name" placeholder="Enter your name" required>
+              <input class="input_phone" type="text" name="phone" placeholder="Enter your phone" pattern="[+]d{1}s[(]d{3}[)]sd{3}[-]d{2}[-]d{2}">
+              <select name="nationality" placeholder="Chose your class">
+                <option class="select--list" value="Chose your class">Chose your class</option>
+                <option class="select--list" value="class-1">class-1</option>
+                <option class="select--list" value="class-2">class-2</option>
+                <option class="select--list" value="class-3">class-3</option>
+                <option class="select--list" value="class-4">class-4</option>
+              </select>
+              <button class="btn_try-it">Try it</button>
+            </form>
+            <div class="wrapper_text">
+              <p class="wrapper_text_first">Just Balance your Mind & Body</p>
+              <p class="wrapper_text_second">
+                 Create the healthy living<br>for yourself</p>
+            </div>
+          </div></span><img src="./images/blue_bg_1.png" alt="yoga"></div>
+    </section>
+    <footer id="footer">
+      <p>Copyright  ©  2016-2017 Yoga classes</p>
+    </footer>
+  </body>
+</html>
