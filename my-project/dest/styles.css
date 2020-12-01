@@ -15,6 +15,10 @@
   src: url("./fonts/OpenSans-SemiBold.woff"); }
 
 @font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/opensans.woff"); }
+
+@font-face {
   font-family: 'Freestyle Script';
   src: url("./fonts/FreestyleScript.ttf"); }
 
@@ -28,7 +32,8 @@ header {
   position: fixed;
   left: 0;
   right: 0;
-  top: 0; }
+  top: 0;
+  z-index: 100; }
   header ul {
     margin-left: 0;
     padding-left: 0;
@@ -152,6 +157,113 @@ section {
       height: auto;
       filter: grayscale(83%) hue-rotate(1deg); }
 
+.wrapper-all_cart .big_title {
+  font-family: 'Open Sans SemiBold';
+  font-size: 30px;
+  color: #5b6ceb;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 130px; }
+
+.wrapper-all_cart .litle_title {
+  font-family: 'Freestyle Script';
+  font-size: 40px;
+  color: #777777;
+  text-align: center;
+  margin: 23px 0 75px 0; }
+
+.wrapper-all_cart .inner-wrapper-first_cart {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 130px; }
+  .wrapper-all_cart .inner-wrapper-first_cart .cart {
+    width: 570px;
+    display: flex;
+    flex-direction: row;
+    margin: 15px; }
+    .wrapper-all_cart .inner-wrapper-first_cart .cart .wrapper_image {
+      height: 300px;
+      width: 50%;
+      overflow: hidden; }
+      .wrapper-all_cart .inner-wrapper-first_cart .cart .wrapper_image img {
+        height: 100%;
+        width: auto;
+        border-radius: 10px; }
+    .wrapper-all_cart .inner-wrapper-first_cart .cart .wrapper_cart_text {
+      width: 50%;
+      background-color: white;
+      padding: 50px 50px 50px 30px; }
+      .wrapper-all_cart .inner-wrapper-first_cart .cart .wrapper_cart_text .title {
+        font-family: 'Open Sans SemiBold';
+        font-size: 20px;
+        color: #777777; }
+      .wrapper-all_cart .inner-wrapper-first_cart .cart .wrapper_cart_text .main_text {
+        font-family: 'Open Sans';
+        color: #555555;
+        font-size: 14px;
+        margin: 35px 0 18px 0; }
+      .wrapper-all_cart .inner-wrapper-first_cart .cart .wrapper_cart_text .name_position {
+        font-family: 'Open Sans';
+        font-size: 14px;
+        color: #999999; }
+
+.wrapper-all_cart .inner-wrapper-second_cart {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 130px; }
+  .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover {
+    width: 25%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover .blue_cover {
+      display: block;
+      height: 100%;
+      width: 100%;
+      transition: 0.5s;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover .blue_cover:hover {
+        background-color: #5b6ceb;
+        opacity: 80%; }
+      .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover .blue_cover .wrapper_search {
+        background-color: white;
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden; }
+        .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover .blue_cover .wrapper_search i {
+          font-size: 25px;
+          color: #5b6ceb; }
+      .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover .blue_cover:hover .wrapper_search {
+        visibility: visible; }
+  .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover:nth-child(1) {
+    background-image: url(./images/cart_second/asan-1.png); }
+  .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover:nth-child(2) {
+    background-image: url(./images/cart_second/asan-2.png); }
+  .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover:nth-child(3) {
+    background-image: url(./images/cart_second/asan-3.png); }
+  .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover:nth-child(4) {
+    background-image: url(./images/cart_second/asan-4.png); }
+  .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover:nth-child(5) {
+    background-image: url(./images/cart_second/asan-5.png); }
+  .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover:nth-child(6) {
+    background-image: url(./images/cart_second/asan-6.png); }
+  .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover:nth-child(7) {
+    background-image: url(./images/cart_second/asan-7.png); }
+  .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover:nth-child(8) {
+    background-image: url(./images/cart_second/asan-8.png); }
+
 footer {
   position: absolute;
   bottom: 0;
@@ -184,6 +296,10 @@ footer {
   src: url("./fonts/OpenSans-SemiBold.woff"); }
 
 @font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/opensans.woff"); }
+
+@font-face {
   font-family: 'Freestyle Script';
   src: url("./fonts/FreestyleScript.ttf"); }
 
@@ -196,4 +312,5 @@ footer {
   margin: 0; }
 
 body {
-  padding-top: 100px; }
+  padding-top: 100px;
+  position: relative; }
