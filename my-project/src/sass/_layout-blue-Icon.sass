@@ -1,7 +1,6 @@
 section
     width: 100%
     height: 100%
-    margin-bottom: 100px
     .wrapper_bg
         height: 100%
         width: 100%
@@ -14,22 +13,22 @@ section
             top: 0
             bottom: 0
             z-index: 1
+            display: flex
+            justify-content: center
+            align-items: center
             .wrapper-icon
-                width: 90%
-                height: 100%
+                width: 1170px
                 display: flex
                 flex-wrap: wrap
-                padding: 20px 0
-                margin: 0 auto
-                
                 .cart-icon 
-                    width: 25%
                     display: flex
                     flex-direction: column
                     justify-content: center
                     align-items: center
-                    // padding: 0 10px
-                    margin-bottom: 10px     
+                    padding: 50px 10px 50px 10px
+                    width: calc(25% - 20px) 
+                    text-align: center 
+                    height: min-content
                     img
                         height: 74px
                         width: 74px
@@ -37,13 +36,15 @@ section
                         font-family: 'Open Sans SemiBold'
                         font-size: 18px
                         color: white
-                        margin-top: 15px
-                        margin-bottom: 15px
+                        margin-top: 35px
+                        margin-bottom: 25px
+                        padding: 0 50px
+                        height: 47px
                     .text 
                         font-family: 'Open Sans'
                         font-size: 16px
                         color: white
-                        line-height: 25px
+                        line-height: 27px
         img 
             width: 100%
             height: auto

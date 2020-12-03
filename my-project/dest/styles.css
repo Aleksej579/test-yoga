@@ -175,7 +175,7 @@ section {
 .wrapper-all_cart .inner-wrapper-first_cart {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 1170px;
   margin: 0 auto;
   justify-content: center;
   margin-bottom: 130px; }
@@ -183,7 +183,7 @@ section {
     width: 570px;
     display: flex;
     flex-direction: row;
-    margin: 15px; }
+    margin: 5px; }
     .wrapper-all_cart .inner-wrapper-first_cart .cart .wrapper_image {
       height: 300px;
       width: 50%;
@@ -264,13 +264,16 @@ section {
     background-image: url(./images/cart_second/asan-8.png); }
 
 .wrapper-all_cart .inner-wrapper-last_cart {
-  width: 90%;
+  width: 1170px;
   display: flex;
   padding: 125px 0;
   margin: 0 auto; }
   .wrapper-all_cart .inner-wrapper-last_cart .left_blok {
     width: 50%;
-    padding-right: 130px; }
+    padding-right: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
     .wrapper-all_cart .inner-wrapper-last_cart .left_blok .title {
       color: #5b6ceb;
       font-size: 30px;
@@ -296,8 +299,7 @@ section {
 
 section {
   width: 100%;
-  height: 100%;
-  margin-bottom: 100px; }
+  height: 100%; }
   section .wrapper_bg {
     height: 100%;
     width: 100%;
@@ -309,21 +311,23 @@ section {
       right: 0;
       top: 0;
       bottom: 0;
-      z-index: 1; }
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
       section .wrapper_bg .fon_bg .wrapper-icon {
-        width: 90%;
-        height: 100%;
+        width: 1170px;
         display: flex;
-        flex-wrap: wrap;
-        padding: 20px 0;
-        margin: 0 auto; }
+        flex-wrap: wrap; }
         section .wrapper_bg .fon_bg .wrapper-icon .cart-icon {
-          width: 25%;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          margin-bottom: 10px; }
+          padding: 50px 10px 50px 10px;
+          width: calc(25% - 20px);
+          text-align: center;
+          height: min-content; }
           section .wrapper_bg .fon_bg .wrapper-icon .cart-icon img {
             height: 74px;
             width: 74px; }
@@ -331,13 +335,15 @@ section {
             font-family: 'Open Sans SemiBold';
             font-size: 18px;
             color: white;
-            margin-top: 15px;
-            margin-bottom: 15px; }
+            margin-top: 35px;
+            margin-bottom: 25px;
+            padding: 0 50px;
+            height: 47px; }
           section .wrapper_bg .fon_bg .wrapper-icon .cart-icon .text {
             font-family: 'Open Sans';
             font-size: 16px;
             color: white;
-            line-height: 25px; }
+            line-height: 27px; }
     section .wrapper_bg img {
       width: 100%;
       height: auto;
@@ -384,7 +390,53 @@ footer {
 
 @media (max-width: 1280px) {
   .contact_form {
-    padding: 20px !important; } }
+    padding: 20px !important; }
+  section .wrapper_bg .fon_bg .wrapper-icon .cart-icon {
+    padding: 20px 5px 20px 5px;
+    width: calc(25% - 10px); }
+    section .wrapper_bg .fon_bg .wrapper-icon .cart-icon .title {
+      margin-top: 15px;
+      margin-bottom: 10px;
+      padding: 0 25px; } }
+
+@media (max-width: 768px) {
+  section .wrapper_bg .fon_bg .wrapper_contactform_text .contact_form {
+    border-radius: 7px;
+    width: 50%;
+    margin-left: 30px; }
+    section .wrapper_bg .fon_bg .wrapper_contactform_text .contact_form .contact_form_labl {
+      font-size: 20px; }
+  section .wrapper_bg .fon_bg .wrapper_contactform_text .wrapper_text {
+    margin-left: 40px;
+    height: auto; }
+    section .wrapper_bg .fon_bg .wrapper_contactform_text .wrapper_text .wrapper_text_first, section .wrapper_bg .fon_bg .wrapper_contactform_text .wrapper_text .wrapper_text_second {
+      font-size: 30px; }
+  section .wrapper_bg img {
+    width: auto;
+    margin-left: calc(50% - 960px); }
+  section .wrapper-all_cart .inner-wrapper-first_cart {
+    width: auto; }
+  section .wrapper-all_cart .inner-wrapper-second_cart .wrapper_image-hover {
+    width: 50%;
+    height: auto; }
+  section .wrapper-all_cart .inner-wrapper-last_cart {
+    width: auto;
+    margin-right: 30px;
+    margin-left: 30px; }
+    section .wrapper-all_cart .inner-wrapper-last_cart .left_blok {
+      padding-right: 10px; }
+    section .wrapper-all_cart .inner-wrapper-last_cart .swiper-container {
+      width: 50%;
+      height: auto; }
+  section .wrapper_bg .fon_bg .wrapper-icon .cart-icon {
+    width: calc(50% - 10px); }
+    section .wrapper_bg .fon_bg .wrapper-icon .cart-icon img {
+      height: 50px;
+      width: 50px; }
+    section .wrapper_bg .fon_bg .wrapper-icon .cart-icon title {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding: 0 15px; } }
 
 * {
   padding: 0;
@@ -392,4 +444,5 @@ footer {
 
 body {
   padding-top: 100px;
-  position: relative; }
+  position: relative;
+  padding-bottom: 100px; }
