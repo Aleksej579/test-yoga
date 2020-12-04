@@ -1,0 +1,59 @@
+section
+    div.wrapper-cartPrice 
+        div.wrapper-cart 
+            div.cart_price
+                div.blue_header
+                    p.doll $
+                    p.price 49
+                    p.month / month
+                p.date_time_advicer ENTRY DATE: MON – FRI
+                hr
+                p.date_time_advicer ENTRY TIME: 8A.M – 8P.M
+                hr
+                p.date_time_advicer NUTRITION ADVICER: NO
+                button.catr_btn Buy now
+
+            div.cart_price
+                div.blue_header
+                    p.doll $
+                    p.price 69
+                    p.month / month
+                p.date_time_advicer ENTRY DATE: MON – FRI
+                hr
+                p.date_time_advicer ENTRY TIME: 8A.M – 8P.M
+                hr
+                p.date_time_advicer NUTRITION ADVICER: YES
+                button.catr_btn Buy now
+            div.cart_price
+                div.blue_header
+                    p.doll $
+                    p.price 99
+                    p.month / month
+                p.date_time_advicer ENTRY DATE: MON – SUN
+                hr
+                p.date_time_advicer ENTRY TIME: 8A.M – 8P.M
+                hr
+                p.date_time_advicer NUTRITION ADVICER: YES
+                button.catr_btn Buy now
+        div.cart_user
+            div.round_photo 
+                img(src="./images/round-photo.png", alt="user-photo")
+            div.text-block 
+                p.main_text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+                div.wrapper_trainer
+                    p.trainer Trainer 
+                    p.name_trainer Laura Shepard
+
+        div.swiper-container
+                ul.swiper-wrapper
+                    each val, index in ['./images/trainer.png']
+                        li(class='swiper-slide')
+                            div.round_photo-2
+                                img(src=val, alt="index")
+                            div.wrapper-text-trainer
+                                p Sara Taylor
+                                p Trainer
+                div.swiper-button-next
+                div.swiper-button-prev
+
+
